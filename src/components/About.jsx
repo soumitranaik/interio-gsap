@@ -31,19 +31,18 @@ const About = () => {
     <div id="about" className="min-h-screen w-screen">
       <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
         <p className="font-general text-sm uppercase md:text-[10px]">
-          Welcome to Zentry
+          Welcome to Interios
         </p>
 
         <AnimatedTitle
-          title="Disc<b>o</b>ver the world's <br /> largest shared <b>a</b>dventure"
+          title="Disc<b>o</b>ver your Home's <br/> greatest P<b>o</b>tenti<b>a</b>l"
           containerClass="mt-5 !text-black text-center"
         />
 
         <div className="about-subtext">
-          <p>The Game of Games begins—your life, now an epic MMORPG</p>
+          <p>  Transform Every Corner Into Something Extraordinary</p>
           <p className="text-gray-500">
-            Zentry unites every player from countless games and platforms, both
-            digital and physical, into a unified Play Economy
+            We create personalized interiors that reflect who you are. From concept to completion, we turn your vision into beautifully functional spaces you'll love coming home to.
           </p>
         </div>
       </div>
@@ -51,7 +50,7 @@ const About = () => {
       <div className="h-dvh w-screen" id="clip">
         <div className="mask-clip-path about-image">
           <img
-            src="img/about.webp"
+            src="img/living-room.jpg"
             alt="Background"
             className="absolute left-0 top-0 size-full object-cover"
           />

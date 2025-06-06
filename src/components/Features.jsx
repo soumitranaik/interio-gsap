@@ -65,7 +65,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
         alt={title}
         className="absolute left-0 top-0 size-full object-cover object-center"
       />
-      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-slate-900">
+      <div className="relative z-10 flex size-full flex-col justify-between p-5 text-sky-950">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
           {description && (
@@ -79,7 +79,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
             onMouseMove={handleMouseMove}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-black px-5 py-2 text-xs uppercase text-white/20"
+            className="border-hsla relative flex w-fit cursor-pointer items-center gap-1 overflow-hidden rounded-full bg-sky-950 px-5 py-2 text-xs uppercase text-white/80"
           >
             {/* Radial gradient hover effect */}
             <div
@@ -90,7 +90,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">read more</p>
           </div>
         )}
       </div>
@@ -99,16 +99,16 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section className="bg-violet-50 pb-52">
     <div className="container mx-auto px-3 md:px-10">
       <div className="px-5 py-32">
-        <p className="font-circular-web text-lg text-blue-50">
-          Into the Metagame Layer
+        <p className="font-circular-web text-lg text-neutral-900 my-1">
+          OUR EXPERTISE: Every Detail, Perfectly Orchestrated
         </p>
-        <p className="max-w-md font-circular-web text-lg text-blue-50 opacity-50">
-          Immerse yourself in a rich and ever-expanding universe where a vibrant
-          array of products converge into an interconnected overlay experience
-          on your world.
+        <p className="max-w-md font-circular-web text-lg text-neutral-900 opacity-50">
+          From ambient lighting that sets the perfect mood to modular kitchens
+          that flow with your lifestyle, we engineer every element to work in
+          harmony. Smart solutions meet stunning aesthetics.
         </p>
       </div>
 
@@ -117,10 +117,10 @@ const Features = () => (
           src="img/animation.gif"
           title={
             <>
-              radia<b>n</b>t
+              LIVING SPACES
             </>
           }
-          description="A cross-platform metagame app, turning your activities across Web2 and Web3 games into a rewarding adventure."
+          description="houghtfully curated furniture and layouts that invite connection and relaxation. From statement sofas to accent pieces, we create living rooms that balance style with the way you actually unwind."
           isComingSoon
         />
       </BentoTilt>
@@ -131,23 +131,23 @@ const Features = () => (
             src="img/bathroom.jpg"
             title={
               <>
-                zig<b>m</b>a
+                BATHROOMS
               </>
             }
-            description="An anime and gaming-inspired NFT collection - the IP primed for expansion."
+            description="We create spa-inspired bathrooms with elegant fixtures, smart storage, and thoughtful layouts that turn every visit into a personal retreat."
             isComingSoon
           />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
-            src="img/wardrobe.jpg"
+            src="img/wardrobe.webp"
             title={
               <>
-                n<b>e</b>xus
+                Wardrobes
               </>
             }
-            description="A gamified social hub, adding a new dimension of play to social interaction for Web3 communities."
+            description="Smart organization meets elegant design to keep your essentials beautifully arranged and easily accessible."
             isComingSoon
           />
         </BentoTilt>
@@ -157,21 +157,21 @@ const Features = () => (
             src="img/kitchen.jpg"
             title={
               <>
-                az<b>u</b>l
+                Kitchen
               </>
             }
-            description="A cross-world AI Agent - elevating your gameplay to be more fun and productive."
+            description="We design modular kitchens that blend style with functionality, creating the perfect space for culinary adventures."
             isComingSoon
           />
         </BentoTilt>
 
         <BentoTilt className="bento-tilt_2">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
+          <div className="flex size-full flex-col justify-between bg-cyan-500 p-5">
+            <h1 className="bento-title special-font max-w-64 text-sky-950 ">
+              M<b>o</b>re  s<b>e</b>rvices
             </h1>
 
-            <FaLocationArrow className="m-5 scale-[5] self-end" />
+            <FaLocationArrow className="text-cyan-950 m-5 scale-[5] self-end" />
           </div>
         </BentoTilt>
 

@@ -67,7 +67,7 @@ const Navbar = () => {
             <Button
               id="product-button"
               title="Products"
-              rightIcon={FaArrowAltCircleRight}
+              rightIcon={<FaArrowAltCircleRight />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
             />
           </div>

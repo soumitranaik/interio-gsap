@@ -1,6 +1,6 @@
 import React, { useRef, useState } from "react";
 import Button from "./Button";
-import { FaBeer } from "react-icons/fa";
+import { FaBeer, FaCartArrowDown } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -57,7 +57,7 @@ const Hero = () => {
 
   useGSAP(() => {
     gsap.set("#video-frame", {
-      clipPath: "polygon(14% 0%, 72% 0%, 90% 100%, 0% 100%)",
+      clipPath: "polygon(14% 0, 72% 0, 88% 90%, 0 95%)",
       borderRadius: "0 0 40% 10%",
     });
 
@@ -125,29 +125,29 @@ const Hero = () => {
             onLoadedData={handleVideoLoad}
           />
         </div>
-        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
-          I<b>N</b>terios
+        <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-sky-200">
+          I<b>N</b>teriors
         </h1>
         <div className="absolute left-0 top-0 z-40 size-full">
           <div className="mt-24 px-5 sm:px-10">
             <h1 className="special-font hero-heading text-blue-100">
               Re<b>d</b>efine
             </h1>
-            <p className="mb-5 max-w-64 font-robert-regular text-blue-100">
-              Enter Our Store <br />
-              Explore our artifcats
+            <p className="mb-5 max-w-64 font-robert-regular text-lg mx-2 text-blue-100">
+              Spaces that tell your story <br />
+             Where comfort meets style
             </p>
             <Button
               id="watch-trailer"
-              title="Watch Trailer"
-              containerClass="!bg-yellow-300"
-              leftIcon={<FaBeer />}
+              title="View All Services"
+              containerClass="!bg-cyan-500 flex gap-1"
+              rightIcon={<FaCartArrowDown />}
             />
           </div>
         </div>
       </div>
-      <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-black">
-        I<b>N</b>terios
+      <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-cyan-500">
+        I<b>N</b>teriors
       </h1>
     </div>
   );
