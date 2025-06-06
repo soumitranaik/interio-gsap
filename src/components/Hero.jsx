@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import Button from "./Button";
-import { FaBeer, FaCartArrowDown } from "react-icons/fa";
+import { FaCartArrowDown } from "react-icons/fa";
+import { TiArrowRight } from "react-icons/ti";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
@@ -140,8 +141,8 @@ const Hero = () => {
             <Button
               id="watch-trailer"
               title="View All Services"
-              containerClass="!bg-cyan-500 flex gap-1"
-              rightIcon={<FaCartArrowDown />}
+              containerClass="!bg-cyan-500 flex gap-1 text-white"
+              rightIcon={<TiArrowRight />}
             />
           </div>
         </div>

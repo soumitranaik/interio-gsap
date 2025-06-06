@@ -4,10 +4,11 @@ import { FaArrowAltCircleRight } from "react-icons/fa";
 import clsx from "clsx";
 import { useWindowScroll } from "react-use";
 import gsap from "gsap/all";
+import { TiArrowRight } from "react-icons/ti";
 
 const Navbar = () => {
   const navContainerRef = useRef(null);
-  const navItems = ["Home", "About", "Contact"];
+  const navItems = ["Home", "About", "Features", "Story",  "Contact"];
 
   const [isAudioPlaying, setIsAudoPlaying] = useState(false);
   const [isIndicatorActive, setIsIndicatorActive] = useState(false);
@@ -67,7 +68,7 @@ const Navbar = () => {
             <Button
               id="product-button"
               title="Products"
-              rightIcon={<FaArrowAltCircleRight />}
+              rightIcon={<TiArrowRight />}
               containerClass="bg-blue-50 md:flex hidden items-center justify-center gap-1"
             />
           </div>
