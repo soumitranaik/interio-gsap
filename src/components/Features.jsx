@@ -40,7 +40,13 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({
+  src,
+  vidsrc,
+  title,
+  description,
+  isComingSoon,
+}) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -60,11 +66,22 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 
   return (
     <div className="relative size-full">
-      <img
-        src={src}
-        alt={title}
-        className="absolute left-0 top-0 size-full object-cover object-center"
-      />
+      {vidsrc ? (
+        <video
+          src={vidsrc}
+          alt={title}
+          loop
+          autoPlay
+          muted
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      ) : (
+        <img
+          src={src}
+          alt={title}
+          className="absolute left-0 top-0 size-full object-cover object-center"
+        />
+      )}
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-sky-950">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
@@ -114,12 +131,8 @@ const Features = () => (
 
       <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh]">
         <BentoCard
-          src="img/animation.gif"
-          title={
-            <>
-              LIVING SPACES
-            </>
-          }
+          vidsrc="videos/animation.mp4"
+          title={<>LIVING SPACES</>}
           description="houghtfully curated furniture and layouts that invite connection and relaxation. From statement sofas to accent pieces, we create living rooms that balance style with the way you actually unwind."
           isComingSoon
         />
@@ -129,11 +142,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
             src="img/bathroom.webp"
-            title={
-              <>
-                BATHROOMS
-              </>
-            }
+            title={<>BATHROOMS</>}
             description="We create spa-inspired bathrooms with elegant fixtures, smart storage, and thoughtful layouts that turn every visit into a personal retreat."
             isComingSoon
           />
@@ -142,11 +151,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_1 row-span-1 ms-32 md:col-span-1 md:ms-0">
           <BentoCard
             src="img/wardrobe.webp"
-            title={
-              <>
-                Wardrobes
-              </>
-            }
+            title={<>Wardrobes</>}
             description="Smart organization meets elegant design to keep your essentials beautifully arranged and easily accessible."
             isComingSoon
           />
@@ -155,11 +160,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
             src="img/kitchen.webp"
-            title={
-              <>
-                Kitchen
-              </>
-            }
+            title={<>Kitchen</>}
             description="We design modular kitchens that blend style with functionality, creating the perfect space for culinary adventures."
             isComingSoon
           />
@@ -168,7 +169,7 @@ const Features = () => (
         <BentoTilt className="bento-tilt_2">
           <div className="flex size-full flex-col justify-between bg-cyan-500 p-5">
             <h1 className="bento-title special-font max-w-64 text-sky-950 ">
-              M<b>o</b>re  s<b>e</b>rvices
+              M<b>o</b>re s<b>e</b>rvices
             </h1>
 
             <FaLocationArrow className="text-cyan-950 m-5 scale-[5] self-end" />
