@@ -1,6 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
 import Button from "./Button";
-import { FaArrowAltCircleRight } from "react-icons/fa";
 import clsx from "clsx";
 import { useWindowScroll } from "react-use";
 import gsap from "gsap/all";
