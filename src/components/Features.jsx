@@ -82,6 +82,11 @@ export const BentoCard = ({
           className="absolute left-0 top-0 size-full object-cover object-center"
         />
       )}
+       {/* <div className="absolute left-0 top-0 h-full w-1/2 bg-black/20 inset-glow" />  */}
+  <div className="absolute bottom-0 left-0 h-full w-full bg-gradient-to-tl" 
+ style={{ 
+background: "linear-gradient(to left top, transparent 0%, transparent 40%, rgba(255, 255, 255, 0.3) 80%, rgba(255, 255, 255, 0.5) 100%)"
+}}/>
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-sky-950">
         <div>
           <h1 className="bento-title special-font">{title}</h1>
