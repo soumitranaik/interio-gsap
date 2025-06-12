@@ -128,7 +128,7 @@ const Features = () => (
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
-            src="img/bathroom.jpg"
+            src="img/bathroom.webp"
             title={
               <>
                 BATHROOMS
@@ -154,7 +154,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
           <BentoCard
-            src="img/kitchen.jpg"
+            src="img/kitchen.webp"
             title={
               <>
                 Kitchen
@@ -177,7 +177,7 @@ const Features = () => (
 
         <BentoTilt className="bento-tilt_2">
           <video
-            src="videos/hero-3.mp4"
+            src="videos/Hero-3.webm"
             loop
             muted
             autoPlay

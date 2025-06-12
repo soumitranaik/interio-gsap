@@ -1,6 +1,5 @@
 import React, { useRef, useState, useEffect } from "react";
 import Button from "./Button";
-import { FaCartArrowDown } from "react-icons/fa";
 import { TiArrowRight } from "react-icons/ti";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -25,7 +24,7 @@ const Hero = () => {
     setCurrentIndex(upcomingVideoIndex);
   };
 
-  const getVideoSrc = (index) => `videos/hero-${index}.mp4`;
+  const getVideoSrc = (index) => `videos/hero-${index}.webm`;
 
   const handleVideoLoad = () => {
     setLoadedVideos((prev) => prev + 1);
